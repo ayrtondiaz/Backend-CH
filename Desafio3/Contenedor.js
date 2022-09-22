@@ -83,7 +83,7 @@ module.exports=Contenedor
 
 const contenedor = new Contenedor('./products.txt')
 
-//contenedor.save({nombre: 'producto 4', precio: 100})
+contenedor.save({nombre: 'producto 4', precio: 100})
 
 // contenedor.getAll()
 
