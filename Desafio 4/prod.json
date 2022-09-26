@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Lucas ",
+    "description": "luvas",
+    "price": "123",
+    "id": 1
+  },
+  {
+    "name": "Lucas ",
+    "description": "luvas",
+    "price": "123",
+    "id": 2
+  },
+  {
+    "name": "Ayrton",
+    "description": "Diaz",
+    "price": 456,
+    "id": 3
+  }
+]
