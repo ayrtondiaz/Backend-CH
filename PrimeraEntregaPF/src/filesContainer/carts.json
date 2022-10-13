@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "timestamp": 1665449109490,
+    "products": [
+      {
+        "code": "01-101",
+        "productName": "camisa",
+        "description": "It is a nice camisa",
+        "price": 100,
+        "stock": 30,
+        "url": "https://www.pexels.com/photo/man-in-white-crew-neck-shirt-holding-white-ceramic-mug-8801180/flanera",
+        "timestamp": 1665429167695,
+        "id": 1
+      },
+      {
+        "code": "01-102",
+        "productName": "jeans",
+        "description": "nice jeans",
+        "price": 500,
+        "stock": 40,
+        "url": "https://www.pexels.com/photo/man-in-white-crew-neck-shirt-holding-white-ceramic-mug-8801180/flanera",
+        "timestamp": 1665690625330,
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": 1665691621001,
+    "products": []
+  }
+]
