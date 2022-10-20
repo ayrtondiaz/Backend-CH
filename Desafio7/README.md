@@ -1,3 +1,1 @@
-# Entregable 7
-
-Para crear por primera vez la base de datos tanto para el chat como los productos hay que descomentar las funciones "createDb()" que se encuentran en los archivos "chat.js" y "Container.js"
+Para crear la base de datso es necesario descomentar las funciones de CreateDb()
