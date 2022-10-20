@@ -1,11 +1,20 @@
 const express = require('express');
+
+const {options}= require('./options/config.js')
+
 const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
 
 const productsRoute = require('./modules/routes/products')
 const messagesRoute = require('./modules/routes/messages');
-const products = require('./modules/container/productsContainer');
-const messages = require('./modules/container/messagesContainer');
+
+const Container = require('./modules/container/productContainer');
+const Chat = require('./modules/container/chatContainer');
+
+const products = new Container(options.mysql,"productos")
+const messages = new Chat(options.sqlite,"chat")
+
+const { table } = require('console');
 
 
 const { json, urlencoded, static } = express;
@@ -30,21 +39,25 @@ const server = httpServer.listen(PORT, () => {
     console.log(`listen in http://localhost:${server.address().port}`);
 });
 
-io.on('connection', async socket => {
-    console.log('Un cliente se a conectado');
-    socket.emit('products', products.getAll());
-    socket.emit('messages', await messages.getAll());
+io.on('connection', async socket=>{
+    const products = await productos.getAll()
+    const messages = await msjs.getMsj()
+    
+    console.log("usuario conectado");
+    socket.emit("products-sv", products)
+    socket.on('add-product', async (data)=>{
+                await productos.addProduct(data)
+                io.sockets.emit('products-sv', await productos.getAll())
+            }
+    )
+    socket.emit("messages", messages)
+    socket.on("new-message", async (data)=>{
+            await msjs.addMsj(data)
+            io.sockets.emit("messages-sv", await msjs.getMsj())
+        
+    })
+    
 
-    socket.on('client-product', (data) => {
-        products.save(data);
-        io.sockets.emit('products', products.getAll());
-    });
+})
 
-    socket.on('client-message', (data) => {
-        messages.save(data);
-        io.sockets.emit('messages', async () => {
-            await messages.getAll();
-        });
-    });
-});
 
