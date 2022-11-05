@@ -1,0 +1,44 @@
+# Products
+
+# POST http://localhost:8080/mongodb/productos/ HTTP/1.1
+# Content-Type: application/json
+
+# { 
+#     "nombre": "Portal Gun",
+#     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit" ,
+#     "codigo": "12345",
+#     "foto":  "https://cdn2.iconfinder.com/data/icons/icontober/64/Inkcontober_Screech_Psyduck-512.png",
+#     "precio": 50,
+#     "stock": 35
+# }
+
+# GET http://localhost:8080/mongodb/productos
+
+# GET http://localhost:8080/mongodb/productos/1
+
+
+# PUT http://localhost:8080/mongodb/productos/1 HTTP/1.1
+# Content-Type: application/json
+
+# {
+#  "nombre": "Portal gun",
+#  "codigo": "5432"
+# }
+
+# DELETE http://localhost:8080/mongodb/productos/1
+
+
+# Cart
+
+# POST  http://localhost:8080/mongodb/carrito
+
+# POST http://localhost:8080/mongodb/carrito/2/productos HTTP/1.1
+# Content-Type: application/json
+
+# {"prodId": 3}
+
+# GET http://localhost:8080/mongodb/carrito/2/productos/
+
+# DELETE http://localhost:8080/mongodb/carrito/2/productos/3
+
+# DELETE http://localhost:8080/mongodb/carrito/2
