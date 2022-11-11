@@ -1,0 +1,32 @@
+<section class="m-4">
+    <h1 class="my-5 text-center">Agregar Producto</h1>
+    <form onsubmit="return addProduct(this)"  class="bg-light bg-gradient py-3">
+         <div class="row g-3">
+        <div class="col-12">
+            <div class="col-6 mx-auto">
+                <input type="text" name="product" class="form-control" placeholder="Producto" aria-label="First name" id="product" required="true">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-6 mx-auto">
+                <input type="text" name="value" class="form-control" placeholder="Precio" aria-label="Valor" id="value" required="true">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-6 mx-auto">
+                <input type="text" name="urlImg" class="form-control" placeholder="Url Imagen" aria-label="urlImg" id="urlImg">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="col-6 mx-auto text-center">
+                <input type="submit" value="Agregar" id="submit" class="btn btn-primary"></input>
+            </div>
+        </div>
+        </div>
+    </form>
+    {{!-- <a class="btn btn-primary mt-5" href="./test" role="button">Ir a Productos</a> --}}
+</section>
+<hr>
+{{> productos}}
+<hr>
+{{> chat}}

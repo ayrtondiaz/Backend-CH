@@ -1,0 +1,27 @@
+<section class="m-4 mt-5 bg-light bg-gradient py-3 w-75 mx-auto">
+    <h2 class="text-center my-3">Dejenos su mensaje</h2>
+    <form onsubmit="return sendMessage(this)">
+        <div class="row g-3 px-5">
+            <div class="col-12">
+                <div class="col-9 mx-auto">
+                    <input type="text" class="form-control" placeholder="Nombre" id="name" required="true">
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 px-5">
+            <div class="col-12">
+                <div id="messages" class="p-3 pb-2"></div>
+            </div>
+        </div>  
+        <div class="row g-3 px-5 my-4">
+            <div class="col-10">
+                <input type="text" class="form-control" placeholder="Mensaje" id="message">
+            </div>
+            <div class="col-2 text-center">
+                <input type="submit" class="btn btn-primary"></input>
+            </div>
+        </div>
+        
+    </form>
+    
+</section>
