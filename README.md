@@ -1,2 +1,11 @@
-## Programación Backend CoderHouse
+### Programación Backend CoderHouse
 ## Diaz Ayrton
+
+---
+<H3>Techs<H3>
+  <p align="left">  
+    <img src="https://skillicons.dev/icons?i=node,js,pug,express,webpack,firebase,mongodb,mysql,sqlite&theme=dark" /> 
+</p>
+
+
+![Snake animation](https://github.com/ayrtondiaz/ayrtondiaz/blob/output/github-contribution-grid-snake.svg)
