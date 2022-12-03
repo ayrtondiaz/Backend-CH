@@ -1,7 +1,7 @@
-### Programación Backend CoderHouse
+## Programación Backend CoderHouse
 ## Diaz Ayrton
 
-# Desafios Entregables y actualizaciones de Proyecto Final en la cursada del curso Backend de CoderHouse
+### Desafios Entregables y actualizaciones de Proyecto Final en la cursada del curso Backend de CoderHouse
 ---
 <H3>Techs<H3>
   <p align="left">  
