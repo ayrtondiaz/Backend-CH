@@ -4,7 +4,7 @@
 ---
 <H3>Techs<H3>
   <p align="left">  
-    <img src="https://skillicons.dev/icons?i=nodejs,js,pug,express,webpack,firebase,mongodb,mysql,sqlite&theme=dark" /> 
+    <img src="https://skillicons.dev/icons?i=nodejs,js,pug,express,webpack,deno,firebase,mongodb,mysql,sqlite&theme=dark" /> 
 </p>
 
 
