@@ -1,0 +1,4 @@
+{"level":"error","message":"El nombre no puede estar vacío"}
+{"level":"error","message":"El precio del producto no puede estar vacío"}
+{"level":"error","message":"El precio del producto debe ser un valor númerico"}
+{"level":"error","message":"El precio del producto debe ser un valor númerico"}
